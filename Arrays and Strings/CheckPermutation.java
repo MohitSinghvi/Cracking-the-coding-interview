@@ -1,4 +1,6 @@
 // Check Permutation : Given two Strings write a method to determine if one is a permutation of other
+//Time Complexity: O(N)
+//Space Complexity: O(N)
 import java.util.Scanner;
 import java.util.HashMap;
 import java.util.Map;
