@@ -1,11 +1,13 @@
 //Is Unique: Implement an algoruthm to determine if a String has all unique charachters. What if you cannot use additional data structure.
+//Time Complexity: O(N)
+//Space Complexity: O(N)
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 class IsUnique{
 	public static void main(String[] args){
 		
-		
+		System.out.print("Enter a String: ");
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();
 		boolean is_unique=true;
