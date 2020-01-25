@@ -8,6 +8,15 @@ class URLify{
 		Scanner sc = new Scanner(System.in);
 		char[] inputarr = (sc.nextLine()).toCharArray();
 		
+		replaceSpaces(inputarr);
+		for(int i=0;i<inputarr.length;i++){
+			System.out.print(inputarr[i]);
+		}
+		
+		
+		
+	}
+	public static void replaceSpaces(char[] inputarr){
 		int pointer=inputarr.length-1;
 		boolean found=false;
 		for(int i=inputarr.length-1;i>-1;i--){
@@ -27,11 +36,5 @@ class URLify{
 				
 			}
 		}
-		for(int i=0;i<inputarr.length;i++){
-			System.out.print(inputarr[i]);
-		}
-		
-		
-		
 	}
 }
