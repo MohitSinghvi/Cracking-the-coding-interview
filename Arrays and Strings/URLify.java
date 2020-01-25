@@ -6,8 +6,7 @@ import java.util.Scanner;
 class URLify{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		String input = sc.nextLine();
-		char[] inputarr = input.toCharArray();
+		char[] inputarr = (sc.nextLine()).toCharArray();
 		
 		int pointer=inputarr.length-1;
 		boolean found=false;
