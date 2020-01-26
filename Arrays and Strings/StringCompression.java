@@ -10,6 +10,9 @@ class StringCompression{
 		
 	}
 	public static String stringCompression(String input){
+		
+		
+		//String Builder is basically an array of char with variale size, It is used because concatenation operation for String is inefficient. 
 		StringBuilder sb_string = new StringBuilder();
 		int count=0;
 		for(int i=0;i<input.length();i++){
