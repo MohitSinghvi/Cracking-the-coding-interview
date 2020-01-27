@@ -27,5 +27,5 @@ class DeleteMiddleNode{
 		m.val=m.next.val;
 		m.next=m.next.next;
 	}
-	
+	 
 }
