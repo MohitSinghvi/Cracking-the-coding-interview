@@ -21,13 +21,10 @@ class DeleteMiddleNode{
 		l.show();
 		
 	}
-	//This function shifts all the nodes right to the "middle node" to left by one place, and then deletes the last node.
+	//This function shifts the node right to the "middle node" to left by one place, and then deletes the next node.
 	public static void deleteMiddleNode(Node m){
-		while(m.next.next!=null){
-			m.val=m.next.val;
-			m=m.next;
-		}
+		
 		m.val=m.next.val;
-		m.next=null;
+		m.next=m.next.next;
 	}
 }
