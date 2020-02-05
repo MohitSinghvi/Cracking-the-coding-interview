@@ -26,6 +26,13 @@ class LinkedList{
 			temp.next=new_node;
 		}
 	}
+	public LinkedList insert(int val){
+		Node new_node = new Node(val);
+		new_node.next=head;
+		head=new_node;
+		return this;
+	} 
+	
 	//To Print the linked list
 	public void show(){
 		Node temp = head;
