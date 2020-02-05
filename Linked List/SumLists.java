@@ -1,4 +1,5 @@
-// You have two numbers represented by a linked list, where each node contains a single digit. The digits are stored in reverse order, such that the 1 's digit is at the head of the list. Write a function that adds the two numbers and returns the sum as a linked list.
+// Sum Lists:You have two numbers represented by a linked list, where each node contains a single digit. The digits are stored in reverse order, such that the 1 's digit is at the head of the list. Write a function that adds the two numbers and returns the sum as a linked list.
+
 class SumLists{
 	public static void main(String[] args){
 		LinkedList l1 = new LinkedList();
@@ -39,6 +40,8 @@ class SumLists{
 	}
 	
 	//Caculate sum considering the Digits in reverse order
+	//Time: O(N)
+	//Space: O(1)
 	public static LinkedList getLinkedListSum(LinkedList l1, LinkedList l2){
 		Node p1,p2;
 		p1=l1.head;
@@ -78,6 +81,8 @@ class SumLists{
 	}
 	
 	//Calculate Sum considering the digits in the actual order
+	//Time: O(N)
+	//Space: O(N)
 	public static int lSum(Node a,Node b, LinkedList s){
 		int r;
 		
