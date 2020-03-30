@@ -8,6 +8,7 @@ class TreeNode{
 		right=null;
 	}
 }
+
 class Tree{
 	TreeNode root;
 	public void put(TreeNode n, int input){
@@ -60,6 +61,31 @@ class Tree{
 		}
 		
 	}
+	
+	public boolean isBST(TreeNode n, Max m){
+		if(n.left!=null){
+			isBST(n.left,m);
+		}
+		
+		if(n.val>m.max){
+			m.max=n.val;
+		}
+		else{
+			return false;
+		}
+		if(n.right!=null){
+			isBST(n.right,m);
+		}
+		return true;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
 	public int height(TreeNode node){
 		if(node==null){
 			return 0;

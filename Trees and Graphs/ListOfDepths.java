@@ -6,7 +6,7 @@ class Node{
 		next=null;
 	}
 }
-class LinkedList{
+class LinkedList1{
 	Node head;
 	Node last;
 	public void append(TreeNode val){
