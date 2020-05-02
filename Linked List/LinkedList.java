@@ -9,7 +9,7 @@ class Node{
 	}
 	
 }
-class LinkedList{
+public class LinkedList{
 	Node head;
 	
 	//to append a node at the end
